@@ -3,6 +3,11 @@ public class Car extends MotorTransport {
         super(modelName, wheelsCount);
     }
 
+    @Override
+    public void updateType() {
+
+    }
+
     public void updateTyre() {
         for (int i = 1; i < getWheelsCount(); i++) {
             System.out.println("Меняем покрышку у " + getModelName());
@@ -19,8 +24,5 @@ public class Car extends MotorTransport {
         checkEngine();
     }
 
-    @Override
-    public void updateType() {
 
-    }
 }

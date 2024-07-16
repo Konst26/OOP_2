@@ -21,6 +21,6 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle1", 2);
         Bicycle bicycle2 = new Bicycle("bicycle2", 3);
 
-        station.check(car, truck2, bicycle);
+        station.check(car);
     }
 }
