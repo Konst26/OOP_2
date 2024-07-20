@@ -1,9 +1,13 @@
-public abstract class Truck extends MotorTransport {
+public class Truck extends MotorTransport {
 
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
-
+@Override
+public void updateTyre () {
+    System.out.println("Менияем покрышку у грузовика");
+}
+@Override
     public void checkEngine() {
         System.out.println("Снимаем кабину и проверяем двигатель");
     }
@@ -14,8 +18,8 @@ public abstract class Truck extends MotorTransport {
 
     @Override
     public void service() {
-        updateType();
         checkEngine();
         checkTrailer();
+        updateTyre();
     }
 }
